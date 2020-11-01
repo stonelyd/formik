@@ -26,6 +26,7 @@ export const Form = React.forwardRef<HTMLFormElement, FormProps>(
         onReset={handleReset}
         action={_action}
         {...rest}
+        className = 'ui form'
       />
     );
   }
