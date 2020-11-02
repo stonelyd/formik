@@ -30,7 +30,7 @@
     "git-reset": "git reset --hard HEAD",
     "git-clean": "git clean -d -x -e node_modules -e packages -f",
     "cypress": "cypress run",
-    "precommit": "lint-staged",
+    "precommit": "lint-staged && build",
     "cypress:open": "cypress open",
     "start:app": "npm run build && yarn --cwd packages/formik link && yarn --cwd node_modules/react link && yarn --cwd ./app link react formik && yarn --cwd ./app && yarn --cwd ./app run dev"
   },
